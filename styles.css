@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo p{
+    width: 230px;
+    font-size: 20px;
+    font-weight: 100;
+    color: rgb(19, 19, 19);
+    margin: 10px;
+    position: relative; /* position the pseudo-element relative to the parent */
+    overflow: hidden; /* Hide overflow to hide the pseudo-element initially */
+    cursor: pointer;
+}
+
+/* Create a pseudo-element for the underline */
+.logo p::before{
+    content: ''; /* Empty content */
+    position: absolute; /* Position the pseudo-element */
+    bottom: 0; /* Align it to the bottom of the text */
+    left: 0; /* Start the underline from the left */
+    width: 0; /* Initially, the width is 0 */
+    height: 1px; /* Height of the underline */
+    background-color: #1f39c8; 
+    transition: width 0.7s ease;
+}
+
+/* Expand the underline on hover */
+.logo p:hover::before{
+    width: 95%; /* Expand the width to 100% on hover */
+}
+
+.logo a{
+    text-decoration: none;
+    color: rgb(19, 19, 19);
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+    color: rgb(19, 19, 19);
+    font-size: 13px;
+    background-color: #fff;
+}
+
+.hero{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.name{
+    font-size: 50px;
+    width: 850px;
+    margin: 0 auto 0 auto;
+}
+
+#gif{
+    width: 150px;
+    margin: 5px;
+}
+
+.main_container{
+    margin: 20px 100px;
+    border: 5px solid rgb(19, 19, 19);
+    border-radius: 30px;
+    padding: 20px;
+    transition: 1.3s;
+}
+
+.main_container:hover{
+    border-color: #1f39c8;
+    color:  #1f39c8;
+}
+
+.project_title{
+    padding: 5px 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+.description{
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+/* gallery, images, modals */
+
+.gallery_title{
+    padding: 5px 0 20px 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image{
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    max-width: 300px;
+}
+
+.image:hover{
+    transform: scale(1.06);
+}
+
+.photos_title{
+   text-align: center;
+}
+
+#vert{
+    transition: transform 0.3s;
+    max-width: 275px;
+}
+
+#vert:hover{
+    transform: scale(1.03);
+}
+
+
+.image img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+}
+
+.modal-content{
+    position: relative;
+    margin: 60px auto;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: center;
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 50px;
+    cursor: pointer;
+    color: #fff;
+    transition: transform 0.3s;
+}
+
+/* navigation arrows */
+.navigation{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.prev, .next{
+    font-size: 40px;
+    cursor: pointer;
+    color: #fff;
+    padding: 20px;
+    background: none;
+    transition: transform 0.3s;
+}
+
+.prev{
+    float: left;
+}
+
+.next{
+    float: right;
+}
+
+.close:hover, .prev:hover, .next:hover{
+    color: #1f39c8;
+    transform: scale(1.6);
+}
+
+#about_me_container{
+    padding-left: 40px;
+}
+
+
+#my_pic_container{
+    display: flex;
+}
+
+#my_pic{
+    width: 15%;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+#about_me_title{
+    padding-bottom: 0;
+}
+
+#about_me{
+    margin: 50px 30px 50px 30px;
+}

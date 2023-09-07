@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魂</title>
+    <link rel="stylesheet" href="styles.css">
+
+    
+</head>
+
+<body>
+    <header id="header" class="alt">
+        <div class="logo">
+            <p> <a href = "#reference_for_href"> by Gerardo Alavez Mejía</a></p>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1 class="name">Confesores Verticales</h1>
+        <img id="gif" src="images/giphy.gif" alt="abstract dots">
+    </div>
+
+    <div class="main_container">
+        <h2 class="project_title">Justificación</h2>
+        <p class="description">
+            La escalada no es solamente mi deporte sino también una herramienta para explorar mis propios límites, superar temores, conocer debilidades y explotar fortalezas. La roca se ha convertido en mi confesor, testigo de mis momentos más íntimos, desafiantes y crudos. Para mí, esta pasión encapsula un sinfín de componentes que escapan del lenguaje tradicional, por lo que
+            este proyecto tiene origen en mi deseo por compartir esta profunda conexión a través de imágenes que capturen la esencia y examinen exitosamente la relación que se establece con la montaña, ese lazo puro entre el escalador y el elemento, pues llega un momento en el que la escalada deja de ser un simple medio y se convierte en un fin en sí mismo.
+        </p>
+    </div>
+    <!------------ Galería ------------> 
+
+    <div class="main_container" id="gallery1">
+        <h2 class="gallery_title">Galería</h2>
+        <div class="gallery">
+
+            <div class="image" onclick="openModal('Image 1', 'images/chalk.jpg', 'gallery1')">
+                <img src="images/chalk.jpg" alt="Image 1">
+                <p class="photos_title">Delicado rastro del ascenso</p>
+            </div>
+
+            <div class="image" onclick="openModal('Image 2', 'images/nahual.jpg', 'gallery1')">
+                <img src="images/nahual.jpg" alt="Image 2">     
+                <p class="photos_title">La coreografía da inicio</p>          
+            </div>
+
+            <div class="image" onclick="openModal('Image 3', 'images/clip.jpg', 'gallery1')">
+                <img src="images/clip.jpg" alt="Image 3"> 
+                <p class="photos_title">Macrina</p>         
+            </div>
+
+            <div class="image" id="vert" onclick="openModal('Image 4', 'images/adiz.jpg', 'gallery1')">
+                <img src="images/adiz.jpg" alt="Image 4">      
+                <p class="photos_title">Ejercer las más elevadas capacidades</p>    
+            </div>
+
+            <div class="image" id="vert" onclick="openModal('Image 5', 'images/equipment.jpg', 'gallery1')">
+                <img src="images/equipment.jpg" alt="Image 5">   
+                <p class="photos_title">Instrumentos de autoflagelación</p>       
+            </div>
+
+            <div class="image" id="vert" onclick="openModal('Image 6', 'images/jair.jpg', 'gallery1')">
+                <img src="images/jair.jpg" alt="Image 6">    
+                <p class="photos_title">Naufragio del ego</p>      
+            </div>
+
+            <div class="image" id="vert" onclick="openModal('Image 7', 'images/pp.jpg', 'gallery1')">
+                <img src="images/pp.jpg" alt="Image 7">    
+                <p class="photos_title">La verdadera fuerza está en la obsesión</p>      
+            </div>
+
+            <div class="image" id="vert" onclick="openModal('Image 8', 'images/manuel.jpg', 'gallery1')">
+                <img src="images/manuel.jpg" alt="Image 8">    
+                <p class="photos_title">Mas si osare un extraño enemigo</p>      
+            </div>
+
+            <div class="image" id="vert" onclick="openModal('Image 9', 'images/nicho.jpg', 'gallery1')">
+                <img src="images/nicho.jpg" alt="Image 9">    
+                <p class="photos_title">Víctima de llevar todo al extremo</p>      
+            </div>
+
+            <div class="image" id="reference_for_href" onclick="openModal('Image 10', 'images/cadenas.jpg', 'gallery1')">
+                <img src="images/cadenas.jpg" alt="Image 10"> 
+                <p class="photos_title">Declaración de cadena perpetua</p>         
+            </div>
+
+        </div>
+    </div>
+
+    <!--------- Vista previa modal --------->
+
+    <div class="modal" id="myModal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+            <div class="navigation">
+                <span class="prev" onclick="prevImage()">&#10094;</span>
+                <span class="next" onclick="nextImage()">&#10095;</span>
+            </div>
+        </div>
+    </div>
+
+    <!--------- Autor --------->
+
+    <div class="main_container" id="about_me_container">
+        <h2 class="project_title" id="about_me_title">Autor</h2>
+        <div id="my_pic_container">
+            <img id="my_pic" src="images/luke.jpg" alt="luke profile pic">
+            <p class="description" id="about_me">
+                Mi nombre es Gerardo y actualmente me encuentro estudiando Ingeniería en Tecnologías Computacionales en el Tec de Monterrey, de hecho, este website que estás explorando ha sido concebido y programado en su totalidad por mí. 
+                Es un reflejo de mi afición por la tecnología y mi constante deseo por aprender y crear, sin embargo, considero que soy mucho más que unas cuantas líneas de código y algoritmos, pues tiendo a significarme a mí mismo a través mi arte, por lo que te puedo asegurar que este proyecto ha sido realizado con mucha pasión. 
+            </p>
+        </div>
+    </div>
+
+
+    <!------------------- Portafolio ------------------->
+
+    <div class="main_container" id="gallery2">
+        <h2 class="gallery_title">Portafolio</h2>
+        <div class="gallery">
+
+            <div class="image" onclick="openModal('Image A', 'images/portafolio/lineas.jpg', 'gallery2')">
+                <img src="images/portafolio/lineas.jpg" alt="Image A">
+                <p class="photos_title">Conspiración de los objetos inanimados I</p>
+            </div>
+
+            <div class="image" onclick="openModal('Image B', 'images/portafolio/ritmo.jpg', 'gallery2')">
+                <img src="images/portafolio/ritmo.JPG" alt="Image B">     
+                <p class="photos_title">Conspiración de los objetos inanimados II</p>          
+            </div>
+
+            <div class="image" onclick="openModal('Image C', 'images/portafolio/luz.jpg', 'gallery2')">
+                <img src="images/portafolio/luz.jpg" alt="Image C"> 
+                <p class="photos_title">Se fue la luz</p>         
+            </div>
+
+            <div class="image" onclick="openModal('Image D', 'images/portafolio/mariposa.jpg', 'gallery2')">
+                <img src="images/portafolio/mariposa.jpg" alt="Image D"> 
+                <p class="photos_title">Invitado de honor en el picnic</p>         
+            </div>
+
+            <div class="image" onclick="openModal('Image E', 'images/portafolio/barrido.jpg', 'gallery2')">
+                <img src="images/portafolio/barrido.jpg" alt="Image E"> 
+                <p class="photos_title">Serpentina Sozin</p>         
+            </div>
+
+            <div class="image" onclick="openModal('Image F', 'images/portafolio/buho.jpg', 'gallery2')">
+                <img src="images/portafolio/buho.jpg" alt="Image F"> 
+                <p class="photos_title">Envejecido en ámbar</p>         
+            </div>
+
+            <div class="image" onclick="openModal('Image G', 'images/portafolio/pica.jpg', 'gallery2')">
+                <img src="images/portafolio/pica.jpg" alt="Image G"> 
+                <p class="photos_title">Pasar desapercibido</p>         
+            </div>
+
+            <div class="image" onclick="openModal('Image H', 'images/portafolio/musa.jpg', 'gallery2')">
+                <img src="images/portafolio/musa.jpg" alt="Image H"> 
+                <p class="photos_title">Foto<sup>2</sup></p>      
+            </div>
+
+            <div class="image" onclick="openModal('Image I', 'images/portafolio/yoyo.jpg', 'gallery2')">
+                <img src="images/portafolio/yoyo.jpg" alt="Image I"> 
+                <p class="photos_title">Top rope fear</p>         
+            </div>
+
+            <div class="image" onclick="openModal('Image J', 'images/portafolio/woods.jpg', 'gallery2')">
+                <img src="images/portafolio/woods.jpg" alt="Image J"> 
+                <p class="photos_title">Siempre tendremos el otoño patagónico</p>         
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
